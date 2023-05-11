@@ -1,0 +1,155 @@
+body{
+    background-image: url(https://media.giphy.com/media/kD546O8UcBo3sTAlaX/giphy.gif);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+*{
+    font-family: Lucida Console;
+}
+
+#nav1{
+height: 100vh; 
+width: 300px; 
+position: fixed; 
+z-index: 1;
+top: 0;
+left: 0;
+background-image: url(../img/L.jpeg); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+overflow: hidden;   
+display: none;
+flex-direction: column;
+align-items: baseline;
+justify-content: space-around;
+}
+
+#btnactive:focus{
+    display: none;
+}
+
+#btnactive{
+    background-color: rgba(0, 0, 0, 0.555);
+    font-size: large;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 300px;
+}
+
+button{
+    width: 300px;
+    height: 100px;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.404);
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.crediti{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.961);
+    position: fixed;
+    z-index: 4;
+}
+
+#btncrediti:focus + .crediti{
+    display: block;
+}
+
+
+.contenutocrediti{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    animation: animcrediti 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animcrediti {
+    0%{
+        top: 800px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+h3{
+    font-family: 'Bad Script', cursive;
+    text-decoration: 1px solid;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Bad Script', cursive;
+    color: #111;
+    animation: glowing 2s linear infinite;
+}
+@keyframes glowing {
+    0%, 100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+                0 0 200px #00b3ff,
+                0 0 300px #00b3ff,
+                0 0 400px #00b3ff;
+    }
+
+    40%, 95% {
+        color: #111;
+        text-shadow: none;
+        filter: blur(0px);
+    }
+}
+
+#ubi{
+    padding-bottom: 10px;
+}
+
+#nav2{
+    height: 100vh; 
+    width: 300px; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 85%;
+    background-image: url(../img/R.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;   
+    display: none;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+

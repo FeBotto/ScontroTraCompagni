@@ -1,0 +1,273 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 31, 67));
+    overflow: hidden;
+    margin: 0px;
+}
+
+*{
+    font-family: Lucida Console;
+}
+
+#bar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid orange; 
+}
+
+#logo{
+    margin-left: 30px;
+    height: 100px;
+    width: 200px;
+}
+
+#crediti{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coin{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ffeb3b;
+    box-shadow: 0 0 10px #ff8c3b,
+    0 0 40px #ff8c3b,
+    0 0 80px #ff8c3b,
+    0 0 160px #ff8c3b,
+    0 0 240px #ff8c3b;
+    text-shadow: 0 0 10px #ff8c3b,
+    0 0 40px #ff8c3b,
+    0 0 80px #ff8c3b,
+    0 0 160px #ff8c3b,
+    0 0 240px #ff8c3b;
+    justify-content: center;
+    border-radius: 25%;
+}
+
+.coin > img{
+    padding-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+h3{
+    color: white;
+}
+
+.characters >.riga > img:hover{
+    cursor: pointer;
+}
+
+h2{
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #ff8c3b,
+    0 0 40px #ff8c3b,
+    0 0 80px #ff8c3b,
+    0 0 160px #ff8c3b,
+    0 0 240px #ff8c3b;
+}
+
+#armadio{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#ottenuti{
+    width: 33%;
+    height: 70%;
+    background-color: transparent;
+    border: 2px solid orange;
+    text-align: center;
+    overflow: scroll;
+}
+
+#characters{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#weapons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+#show{
+    width: 30%;
+    height: 70%;
+    background-color: transparent;  
+}
+
+#infobar{
+    width: 25%;
+    height: 20%;
+    border-radius: 50px;
+    bottom: 10%;
+    left: 60%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    background-color: rgba(0, 63, 112, 0.695);
+}
+
+#itbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.it{
+    height: 40px;
+    width: 40px;
+}
+
+#staticbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 13px;
+}
+
+.contenitore{
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.quadrati{
+    width: 10%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgb(121, 253, 255), rgb(16, 47, 114));
+    border: 1px solid black;
+}
+
+#itpers{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+#piattaforma{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#pers{
+    height: 600px;
+    width: 500px;
+}
+
+@media screen and (max-width: 780px) {
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+
+    #crediti{
+        width: 150px;
+    }
+
+    #itbar{
+        width: 30px;
+    }
+
+    .it{
+        width: 15px;
+        height: 15px;
+    }
+
+    #itpers{
+        height: 100%;
+        width: 20px;
+        padding-right: 50px;
+    }
+
+    #infobar{
+        width: 200px;
+    }
+
+    .contenitore{
+        height: 15%;
+        width: 70%;
+    }
+
+    #staticbar{
+        margin-top: 0px;
+    }
+
+    .coin > h3{
+        font-size: 15px;
+    }
+
+    .coin{
+        width: 75px;
+    }
+
+    .coin > img{
+        height: 40px;
+        width: 40px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    #piattaforma{
+        height: 300px;
+        width: 150px;
+    }
+
+    #pers{
+        width: 150px;
+        height: 250px;
+    }
+}
+
+#ricerca{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
